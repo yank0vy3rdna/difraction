@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://studyphysics.ifmo.ru/pluginfile.php/17494/mod_resource/content/5/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="./sources/style.css">
+    <title>Дифракция</title>
+</head>
+<body>
+
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Симуляция дифракционной картины(Выполнили Крюков, Бабалин P3114)</h5>
+    </div>
+</header>
+<main>
+    <div class="canvasWrap">
+        <canvas class="gradient" id="grad" width="992" height="500"></canvas>
+    </div>
+    <div class="container">
+        <form>
+            <div>
+                <select id="gas">
+                    <option value="Выберите газ в лампе">Выберите газ в лампе</option>
+                    <option value="Гелий">Гелий</option>
+                    <option value="Криптон">Криптон</option>
+                    <option value="Неон">Неон</option>
+                    <option value="Пары ртути">Пары ртути</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="N" id="labelN">Количество щелей: 1</label>
+                <input type="range" min="1" max="50" class="form-control-range disabled" value="1" id="N">
+            </div>
+            <div class="form-group" style="display: none">
+                <label for="lambda" id="labelLambda">длина волны: 300нм</label>
+                <input type="range" min="400" max="700" class="form-control-range" id="lambda">
+            </div>
+            <div class="form-group">
+                <label for="a" id="labelA">Ширина щели: 100мкм</label>
+                <input type="range" min="1" max="199" class="form-control-range" id="a">
+            </div>
+            <div class="form-group">
+                <label for="b" id="labelB">Расстояние между краями соседних щелей: 100мкм</label>
+                <input type="range" min="1" max="199" class="form-control-range" id="b">
+            </div>
+            <div class="form-group" style="display: none">
+                <label for="I" id="labelI">Интенсивность в центре: 50</label>
+                <input type="range" min="0" max="100" class="form-control-range" id="I">
+            </div>
+            <div class="form-group">
+                <label for="L" id="labelL">Расстояние от решетки до экрана: 2м</label>
+                <input type="range" min="10" max="50" value="20" class="form-control-range" id="L">
+            </div>
+            <div>
+                <input value="Отобразить" onclick="set_parametr()" type="button">
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="./sources/const.js"></script>
+<script src="./sources/Chart.js"></script><a style="display: none;"></a>
+<noscript>
+    <div>
+        Извините, для работы приложения нужен включённый Javascript
+    </div>
+</noscript>
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted"><a href="http://yank0vy3rdna.ru">yank0vy3rdna</a> and <a href="https://github.com/Iuribabalin">IuryBabalin</a></span>
+    </div>
+</footer>
+
+</body></html>
