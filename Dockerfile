@@ -6,5 +6,5 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-EXPOSE 9124
+EXPOSE 9127
 CMD [ "node", "app.js" ]
